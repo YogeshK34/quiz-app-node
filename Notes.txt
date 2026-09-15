@@ -1,0 +1,28 @@
+Quiz App: 
+1. For Quiz application with features such as Questions, Options & Score Calculation, I don't have to worry about auth stuff, I can have something like to take a quiz, users needs to enter a username & just take the quiz, the score would be calculated and displayed, so there has to be below 
+@ Database tables: 
+# Questions : this'll have actual question it's answer and a identifier 
+# Scoreboard : will record score of individuals who've taken the quiz, so the columns would be: user, score, user_id
+
+
+now the tricky part is how do I manage this stuff, like questions is straightforward, it'll have only questions but what about the user who'll take the quiz, like how do I record it inside scoreboard? 
+
+okay, so I can do something like ask a user for an input - > username and that'll be recorded inside the user column in scoreboard table
+
+# ranking : I'm hoping I need to perform score calculation outside of the backend route, or somewhere, but the only things worth considering or trickier are: 
+* implementing ranking system 
+* per user quiz taking : how can user's take quiz without actual authentication, I guess that's also something I have to think
+
+Sir has given me to implement the below things: 
+Quiz
+Application
+Questions, options, score calculation
+Technologies Required
+ HTML/CSS/JavaScript
+frontend(Bootstrap)
+ Node.js + Express backend
+ PostgreSQL/MySQL database
+ CRUD operations
+ Form validation
+ Search and sorting
+ REST API
