@@ -5,7 +5,7 @@ export const questions = [
         option_b: "Remus Lupin",
         option_c: "Peter Pettigrew",
         option_d: "James Potter",
-        correc_answer: "Sirius Black"
+        correct_answer: "Sirius Black"
     },
     {
         question: "What is the name of Harry Potter's pet owl?",
@@ -13,7 +13,7 @@ export const questions = [
         option_b: "Scabbers",
         option_c: "Hedwig",
         option_d: "Fang",
-        correc_answer: "Hedwig"
+        correct_answer: "Hedwig"
     },
     {
         question: "Which Hogwarts house does Harry belong to?",
@@ -21,7 +21,7 @@ export const questions = [
         option_b: "Hufflepuff",
         option_c: "Ravenclaw",
         option_d: "Gryffindor",
-        correc_answer: "Gryffindor"
+        correct_answer: "Gryffindor"
     },
     {
         question: "What platform number does the Hogwarts Express depart from?",
@@ -29,7 +29,7 @@ export const questions = [
         option_b: "Platform 8 1/2",
         option_c: "Platform 7 3/4",
         option_d: "Platform 10",
-        correc_answer: "Platform 9 3/4"
+        correct_answer: "Platform 9 3/4"
     },
     {
         question: "Who is the Half-Blood Prince?",
@@ -37,7 +37,7 @@ export const questions = [
         option_b: "Severus Snape",
         option_c: "Albus Dumbledore",
         option_d: "Sirius Black",
-        correc_answer: "Severus Snape"
+        correct_answer: "Severus Snape"
     },
     {
         question: "What core does Harry's wand have?",
@@ -45,7 +45,7 @@ export const questions = [
         option_b: "Unicorn hair",
         option_c: "Phoenix feather",
         option_d: "Thestral tail hair",
-        correc_answer: "Phoenix feather"
+        correct_answer: "Phoenix feather"
     },
     {
         question: "What is the name of the ghost who haunts the girls' first-floor bathroom?",
@@ -53,7 +53,7 @@ export const questions = [
         option_b: "Nearly Headless Nick",
         option_c: "The Grey Lady",
         option_d: "Moaning Myrtle",
-        correc_answer: "Moaning Myrtle"
+        correct_answer: "Moaning Myrtle"
     },
     {
         question: "Which magical object reveals the entire layout of Hogwarts?",
@@ -61,7 +61,7 @@ export const questions = [
         option_b: "The Marauder's Map",
         option_c: "The Mirror of Erised",
         option_d: "The Sorting Hat",
-        correc_answer: "The Marauder's Map"
+        correct_answer: "The Marauder's Map"
     },
     {
         question: "What position does Harry play on his Quidditch team?",
@@ -69,7 +69,7 @@ export const questions = [
         option_b: "Keeper",
         option_c: "Seeker",
         option_d: "Beater",
-        correc_answer: "Seeker"
+        correct_answer: "Seeker"
     },
     {
         question: "What is the name of Ron Weasley's pet rat?",
@@ -77,6 +77,6 @@ export const questions = [
         option_b: "Arnold",
         option_c: "Pigwidgeon",
         option_d: "Scabbers",
-        correc_answer: "Scabbers"
+        correct_answer: "Scabbers"
     }
 ];
