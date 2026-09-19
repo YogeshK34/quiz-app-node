@@ -1,11 +1,15 @@
 import { questions } from "../question.js";
 import { pool } from "./db.js";
 import express from "express";
+import cors from "cors"
 
 const app = express();
 const PORT = 3001;
 
 app.use(express.json());
+app.use(cors({
+    origin: 'http://localhost:3000',
+}))
 
 app.get('/', async (req, res) => {
     try {
@@ -34,7 +38,21 @@ app.post('/add-questions', async (req, res) => {
         console.log('Script ran, Questions seeded!');
 
         res.status(200).json({ message: 'Script ran, Questions seeded!' })
-        pool.end();
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+        return;
+    }
+})
+
+app.get('/questions', async (req, res) => {
+    try {
+        const result = await pool.query(
+            'SELECT * FROM questions;'
+        );
+
+        return res.status(200).json({ result: result.rows });
 
     } catch (error) {
         console.error(error);
@@ -69,7 +87,7 @@ app.post('/submit', async (req, res) => {
 app.get('/rankings', async (req, res) => {
     try {
         const result = await pool.query(
-            `SELECT username, score
+            `SELECT username, score,
             RANK() OVER (ORDER BY score DESC) as rank
             FROM scoreboard
             ORDER BY score DESC`

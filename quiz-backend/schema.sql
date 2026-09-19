@@ -12,6 +12,6 @@ CREATE TABLE IF NOT EXISTS questions (
 -- scoreboard db 
 CREATE TABLE IF NOT EXISTS scoreboard (
     id SERIAL PRIMARY KEY, 
-    username VARCHAR(255) NOT NULL, 
+    username VARCHAR(255) UNIQUE NOT NULL, 
     score INT NOT NULL
 )
